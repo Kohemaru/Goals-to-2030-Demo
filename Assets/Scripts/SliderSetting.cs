@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//タイトル画面とボーズメニューの感度調整スライダーの実装
 public class SliderSetting : MonoBehaviour
 {
     Slider slider;
@@ -15,6 +16,7 @@ public class SliderSetting : MonoBehaviour
 	}
 
     // Start is called before the first frame update
+    //スタイダーの設定の初期化
     void Start()
     {
         slider = GetComponent<Slider>();
@@ -28,6 +30,7 @@ public class SliderSetting : MonoBehaviour
         
     }
 
+//スライダーを動かしたときの値の設定と表示のために値を整える
     public void sensSetting()
     {
         sens = slider.value;

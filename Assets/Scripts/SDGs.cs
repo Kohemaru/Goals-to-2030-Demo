@@ -18,7 +18,7 @@ public class SDGs : MonoBehaviour
         
     }
     
-
+//　対応したアイテムを取得したときに対応したオブジェクトを表示
     void OnTriggerEnter(Collider other) 
     {
         if (other.gameObject.CompareTag ("Player"))
